@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 50px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+.navbar_logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+}
+.navbar_logo a img{
+    max-width: 100px;
+    max-height: 100px;
+}
+.navbar_menu{
+    list-style: none;
+    display: flex;
+}
+.navbar_item{
+    position: relative;
+}
+.navbar_item:not(:first-child){
+    margin-left: 30px;
+}
+.navbar_item a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.submenu{
+    border-radius: 5px;
+    position: absolute;
+    right:0 ;
+    top: calc(100% + 60px);
+    max-width: max-content;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 5px 10px 0 #00000025;
+    transform: translateY(15%) ;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform .2s, opacity .3s;
+}
+.submenu.show{
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+    background-color: white;
+}
+.submenu_itens{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.submenu_item{
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    width: 350px;
+    transition: background-color .2s;
+    padding: 10px;
+    cursor: pointer;
+}
+.submenu_item:hover{
+    background-color: #eee;
+    border-radius: 5px;
+}
+.organized{
+    display: flex;
+    flex-direction: column;
+    
+}
+.submenu_item h4{
+    font-weight: 700;
+}
+.submenu_item h5{
+    font-weight: 300;
+}
+.submenu_item p{
+    font-size: 26px;
+    color: #ec8e18;
+    margin-right: 10px;
+}
+.desc_home h6{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 10px;
+    font-size: 36px;
+}
+.desc_home .brands_logo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+.brands_logo img{
+    
+    padding: 30px;
+    
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_brands a{
+    text-decoration: none;
+    color: black;
+    padding: 40px;
+}
+.color_GTC{
+    color: #ec8e18;
+}

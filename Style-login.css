@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+   
+.card{
+    padding: 40px;
+    width: 400px;
+}
+.card h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272262;
+}
+.genero{
+    
+    padding:0px;
+    color: #272262;
+    font-size: 18px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    
+}
+.genero p{
+    margin-left: 0px;
+}
+
+.label-float input{
+    width: 100%;
+    padding: 15px 15px 0px 15px;
+    display: inline-block;
+    border: 0px;
+    border-bottom: 2px solid #272262;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 18px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+.label-float{
+    position: relative;
+    padding-top: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.label-float spam{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #4038a0;
+}
+.label-float label{
+    color: #272262;
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+.label-float input:focus + label,
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+
+}
+button{
+    align-items: center;
+    background-color: #ec8e18;
+    width: 200px;
+    color: #111;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 50px;
+    border-radius: 30%;
+    cursor: pointer;
+    outline: none;
+}
+button:hover{
+    background-color:#272262 ;
+    color: #fff;
+    transition: all .4s ease-out;
+}
+.justify-center{
+    display: flex;
+    justify-content: center;
+    
+}
+hr{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+}
+
+.link_cadastro {
+    color: #7a3077;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+.link_cadastro:hover{
+    color: #272262;
+    transition: all .3s ease-out;
+}
+p{
+    color: #272262;
+    font-size: 14px;
+    text-align: center;
+    font-size: 16px;
+}
+.fa-eye{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    cursor: pointer;
+    color: #272262;
+}
+.label-float.error input{
+    border-color: #ff3b25;
+
+}
+.label-float.error spam{
+    color:#ff3b25;
+    visibility: visible;
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.containerForm{
+    
+    background-color: #f3f3f3;
+    border-radius: 14px;
+    margin: auto;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 3px 5px #000.5;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.header_form{
+    background: linear-gradient(120deg, #ec8e18, #d75413, black  );
+    padding: 24px;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    color: #f9f9f9
+}
+.banner_abertura{
+    background-image: url(./images/img_industria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    
+}
+.banner_abertura h1{
+    margin: auto 0;
+    padding: 20px;
+    color: #ec8e18;
+    font-size: 60px;
+}
+.form{
+    padding: 18px;
+    margin: auto;
+}
+.form-content{
+    margin-bottom: 8px;
+    padding: 18px;
+    position: relative;
+}
+.form-content label{
+    display: block;
+    margin-bottom: 4px;
+
+}
+.form-content input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+.select-estado{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+.form-content spam{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+.form-content button{
+    background-color: #ec8e18;
+    color: #f3f3f3;
+}
+.org_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.desc_produto textarea{
+    height: 300px;
+    width: 100%;
+}
+.desc-orcamento{
+    margin: 30px;
+    padding: 30px;
+    font-size: 21px;
+}
+.form-content.error input{
+    border-color: #ff3b25;
+
+}
+.form-content.error spam{
+    color:#ff3b25;
+    visibility: visible;
+}

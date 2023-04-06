@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.texto-um{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 1200px;
+    font-size: 26px;
+    
+}
+.apresentacao{
+    display: flex;
+    padding: 10px;
+    border: 8px solid #ec8e18;
+    border-radius: 10px 50px;
+}
+
+.img-industria{
+    height:450px ;
+    width: 650px;
+    padding: 10px;
+    border-radius: 50px 25px;
+    
+}
+.content_midia_desc{
+    
+    display: block;
+    font-size: .75rem;
+    line-height: 1rem;
+}
+.content_midia_desc a{
+    text-decoration: none;
+    
+}
+.texto-dois{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 1200px;
+    font-size: 26px;
+    position: relative;
+}
+.missao{
+    display: flex;
+    padding: 10px;
+    border: 8px solid #ec8e18;
+    border-radius: 10px 50px;
+}
+.text_about{
+    padding: 10px;
+}
+.text_about i{
+    display: flex;
+    justify-content: flex-start;
+    color:#ec8e18;
+    padding: 5px;
+}
+.mission_list li {
+    display: flex;
+    list-style: none;
+    padding: 15px;
+    margin-left: 5px
+
+}
+.saber-mais{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 40px;
+    width: 1200px;
+    font-size: 26px;
+    
+}
+.contact_GTC ul li{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 5px;
+    width: 1200px;
+    font-size: 26px;
+}
+.contact_GTC i{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color:#ec8e18;
+    padding: 10px;
+
+}
+.contact_GTC a{
+    text-decoration: none;
+    color:black;
+}
